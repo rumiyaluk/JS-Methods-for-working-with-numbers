@@ -1,0 +1,20 @@
+Task 
+Count the number of NaN values in an array
+
+Write a function countNaN that takes the array arr as an argument and returns the number of elements in the array that are NaN.
+Examples:
+• the function countNaN ([NaN, 1, NaN + 1, "a" * 2]) must return 3, since this array contains three elements with the value NaN;
+• the countNaN (['hello', 'Hello' * 5]) function must return 1;
+• the countNaN ([NaN + 1]) function must return 1;
+• the countNaN ([1, 2]) function must return 0;
+• the countNaN ([]) function must return 0.
+
+Solution
+function countNaN(arr){
+ let sum = 0 ;
+ for(let i = 0; i < arr.length; i++){
+  if (Number.isNaN(arr[i]) === true)
+  sum ++;
+ }
+return sum;
+}

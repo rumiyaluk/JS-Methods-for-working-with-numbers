@@ -1,0 +1,25 @@
+Task
+Write a function isArgNaN that checks if the value argument contains NaN.
+
+If the argument is NaN, return NaN.
+Otherwise, return the value of value.
+Use the isNaN (value) function in your solution
+Examples:
+• the isArgNaN (NaN) function must return NaN;
+• the isArgNaN ('hello' * 2) function must return NaN;
+• isArgNaN (NaN + 1) function must return NaN;
+• the isArgNaN (0/0) function must return NaN;
+• the isArgNaN ('abc') function must return NaN;
+• the isArgNaN ('a') function must return NaN ";
+• the isArgNaN ('2,5') function must return NaN ";
+• the isArgNaN (25) function must return 25;
+• the isArgNaN (1/0) function must return Infinity;
+• isArgNaN ('23 '* 3) function should return 69;
+• the isArgNaN ('2.343') function must return "2.343";
+• the isArgNaN (true) function must return true;
+
+Solution
+function isArgNaN(value){
+ if (isNaN(value)) return NaN;
+ else return value;
+}

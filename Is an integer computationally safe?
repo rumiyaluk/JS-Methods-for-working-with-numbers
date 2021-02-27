@@ -1,0 +1,12 @@
+Task
+Is an integer computationally safe?
+Write a safeNumber function that takes an integer x and returns true if x contains a safe integer value, and false otherwise.
+Examples:
+• safeNumber (20000) function must return true;
+• safeNumber (9007199254740991) function must return true;
+• safeNumber (9007199254740992) must return false.
+
+Solution
+function safeNumber (x) {
+if (Number.isSafeInteger (x)) return true; else return false;
+}

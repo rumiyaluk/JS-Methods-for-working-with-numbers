@@ -1,0 +1,21 @@
+Task
+
+If function argument is NaN
+Write a function multBy5 that takes value as an argument, and if it's NaN, it returns the string "Value is NaN", otherwise it multiplies the value by 5.
+Examples:
+• function multBy5 (3) must return 15;
+• function multBy5 (0) must return 0;
+• function multBy5 (true) must return 5;
+• function multBy5 (false) must return 0;
+• the multBy5 (null) function must return 0;
+• function multBy5 ('a') must return NaN;
+• function multBy5 (undefined) must return NaN.
+• function multBy5 ('a' * 5) must return "Value is NaN";
+• the multBy5 (NaN) function must return "Value is NaN";
+• function multBy5 (+ 'hello') must return "Value is NaN".
+
+Solution
+function multBy5(value){
+if (Number.isNaN(value)) return "Value is NaN";
+else return value * 5;
+}

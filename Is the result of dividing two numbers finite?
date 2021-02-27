@@ -1,0 +1,12 @@
+Task
+Is the result of dividing two numbers finite?
+Write a function checkingForFinite that takes two numbers a and b as arguments, dividing a by b, and checking the result of the division (quotient) by finitude. The function must return true if the result is a finite number, and false otherwise.
+Examples:
+• the checkingForFinite (4, 2) function must return true;
+• the checkingForFinite (3, 0) function must return false;
+• the checkingForFinite (-1, 0) function must return false.
+
+Solution
+function checkingForFinite (a, b) {
+return Number.isFinite (a / b);
+}

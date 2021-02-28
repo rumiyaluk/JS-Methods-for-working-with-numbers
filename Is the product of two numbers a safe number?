@@ -1,0 +1,17 @@
+
+Task
+Is the product of two numbers a safe number?
+Write a function checkingForfSafe that takes two values ​​a and b as arguments, multiplies a by b, and checks if the product is a safe number. The function should return true if the product of numbers is a safe number, and false otherwise.
+Examples:
+• the checkingForfSafe (4000, 2000) function must return true;
+• the checkingForfSafe (9007199254740991, 10) function must return false;
+• the checkingForfSafe (Infinity, 2) function must return false.
+
+
+Solution
+function checkingForfSafe (a, b) {
+ if (Number.isSafeInteger (a * b) === true)
+  return true;
+  else
+  return false;
+  }

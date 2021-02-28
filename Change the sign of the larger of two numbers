@@ -1,0 +1,16 @@
+Task
+Change the sign of the larger of two numbers
+Write a function called changeMax that takes two numbers a and b as arguments, reverses the sign of the larger of the numbers, and returns that number. If the numbers are equal, return the message "The numbers are equal".
+Example:
+• the changeMax (9, 4) function must return -9;
+• the changeMax (1, 6) function must return -6;
+• the changeMax (0, 4) function must return -4;
+• the changeMax (-1, -3) function must return 1;
+• the changeMax (4, 4) function must return "The numbers are equal".
+
+Solution
+function changeMax (a, b) {
+if (a === b) return "The numbers are equal";
+else if (a <b) return -b;
+else return -a;
+}

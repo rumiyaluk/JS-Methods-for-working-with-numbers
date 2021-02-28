@@ -1,0 +1,13 @@
+Task
+Change the sign of a number
+A number is given. Get the inverse of the given one.
+Write a function called oppositeNumber that takes num as an argument and returns the opposite number.
+Example:
+• function oppositeNumber (9) must return -9;
+• the oppositeNumber (-7) function must return 7;
+• the oppositeNumber (0) function must return 0.
+
+Solution
+function oppositeNumber (num) {
+return -num;
+}

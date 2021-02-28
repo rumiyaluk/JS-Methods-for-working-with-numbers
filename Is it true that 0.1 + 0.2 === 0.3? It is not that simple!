@@ -1,0 +1,15 @@
+Task
+Is it true that 0.1 + 0.2 === 0.3? It is not that simple!
+Write a function isSumEqualsNumber that takes three fractional numbers a, b, c as arguments, and checks if the sum of the two fractional numbers is equal to the third fractional number, i.e. is the sum of a and b equal to c.
+The function should return true (if the sum of the numbers after rounding is equal to the third number) or false otherwise.
+Comment. Round the sum of the numbers and the third number to two decimal places using the toFixed (n) method.
+Example:
+• the isSumEqualsNumber (0.1, 0.2, 0.3) function must return true.
+
+Solution
+function isSumEqualsNumber (a, b, c) {
+let sum = a + b;
+if (sum.toFixed (2) === c.toFixed (2)) return true;
+  else
+  return false;
+}

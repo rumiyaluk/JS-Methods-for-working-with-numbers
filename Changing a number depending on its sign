@@ -1,0 +1,15 @@
+Task
+Changing a number depending on its sign
+Write a function named changeNumber that takes the number num as an argument and doubles that number if it is positive, or reverses the sign of that number if it is negative.
+Example:
+• changeNumber (9) should return 18;
+• the changeNumber (-7) function must return 7;
+• the changeNumber (0) function must return 0.
+
+Solution
+function changeNumber (num) {
+if (num> 0) return num * 2;
+     else if (num <0) return (-num);
+       else
+       return 0;
+}

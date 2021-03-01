@@ -1,0 +1,15 @@
+
+Task
+Symmetrical point on the number axis
+Points M and N are equally distant from point O, but located on opposite sides of it, in opposite directions.
+ 
+Write a function called oppositePoint that takes the number x (the M-coordinate) as an argument and returns the N-coordinate as the string "N (x)".
+Example:
+• the oppositePoint (4) function must return "N (-4)";
+• the oppositePoint (-4) function must return "N (4)";
+• the oppositePoint (0) function must return "N (0)".
+
+Solution
+function oppositePoint (x) {
+return x === 0? `N ($ {x})`: `N ($ {- x})`
+}

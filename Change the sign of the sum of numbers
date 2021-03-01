@@ -1,0 +1,14 @@
+Task
+Change the sign of the sum of numbers
+Write a function called oppositeSum that takes three numbers a, b, c as arguments and returns the sum of these numbers with the opposite sign.
+Example:
+• function oppositeSum (1, 2, 3) must return -6;
+• function oppositeSum (-1, -2, -3) must return 6;
+• the oppositeSum (0, 1, -1) function must return 0.
+
+Solution
+function oppositeSum(a, b, c){
+ let sum = a + b + c;
+   if(sum > 0 || sum < 0) return (-sum);
+     else if ( sum === 0) return 0;
+}

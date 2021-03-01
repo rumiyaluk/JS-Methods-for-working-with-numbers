@@ -1,0 +1,14 @@
+Task
+Changing the sign of each element in an array
+Write a function called oppositeArray that takes the array arr as an argument and returns an array in which each element is replaced with the opposite element.
+Example:
+• function oppositeArray ([1, -2, 3]) must return [-1, 2, -3].
+
+Solution
+function oppositeArray (arr) {
+ let newArr = [];
+ for (let i = 0; i <arr.length; i ++) {
+   newArr.push (arr [i] * (- 1))
+ }
+return newArr;
+}

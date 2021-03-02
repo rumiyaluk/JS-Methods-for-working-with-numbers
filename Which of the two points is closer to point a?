@@ -1,0 +1,22 @@
+
+Task
+Which of the two points is closer to point a?
+Three points a, b, c with different coordinates lie on the number axis. Determine which of the two points: b or c is closer to point a.
+ 
+Write a function named nearestPoint that takes three numbers a, b, c (coordinates of three points on the number axis) as arguments and returns:
+• string "b", if point b is closer to point a,
+• string "c", if point c is closer to point a,
+• the string "distances are equal" if the distances from points b and c to point a are equal.
+Examples:
+• the nearestPoint (9, 6, 14) function must return "b";
+• the nearestPoint (3, 0, 4) function must return "c";
+• nearestPoint (0, 2, -4) should return "b".
+
+Solution
+function nearestPoint (a, b, c) {
+ if (Math.abs (b-a) === Math.abs (c-a)) return "distances are equal";
+ else if (Math.abs (b-a) <Math.abs (a-c)) return "b";
+ else if (Math.abs (a-c) <Math.abs (a-b)) return "c";
+ else if (a === b || a === c)
+ return undefined;
+}

@@ -1,0 +1,18 @@
+
+Task
+Symmetrical point on a plane
+Points M and N are symmetrical about the origin.
+ 
+Write a function called oppositePoint that takes the numbers x and y (coordinates of point M) as arguments and returns the coordinates of point N as the string "N (x, y)".
+Example:
+• function oppositePoint (4, 5) must return "N (-4, -5)";
+• the oppositePoint (-4, -5) function must return "N (4, 5)";
+• the oppositePoint (-4, 5) function must return "N (4, -5)";
+• function oppositePoint (4, -5) must return "N (-4, 5)";
+• the oppositePoint (4, 0) function must return "N (-4, 0)";
+• the oppositePoint (0, 0) function must return "N (0, 0)".
+
+Solution
+function oppositePoint (x, y) {
+ return x && y === 0? `N ($ {x}, $ {y})`: `N ($ {- x}, $ {- y})`;
+}

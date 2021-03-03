@@ -1,0 +1,18 @@
+
+Task
+Expression with module
+Write a function named expressionValue that takes three numbers a, b, c as arguments and returns the value of the expression:
+ 
+Round the result to two decimal places.
+Examples:
+• the expressionValue (-1, 2, -2) function must return 5;
+• the expressionValue (3, 5, -3) function must return 2.8;
+• the expressionValue (0, 9, 8) function must return 0.53.
+
+Solution
+function expressionValue (a, b, c) {
+let f = Math.abs (a-c) + Math.abs (b-c);
+   let s = Math.abs (a + b + c);
+     let res = f / s;
+     return + res.toFixed (2);
+}

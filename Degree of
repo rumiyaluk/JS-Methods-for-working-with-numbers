@@ -1,0 +1,12 @@
+
+Task
+Degree of
+Write a function named power that takes two numbers x, y as arguments and returns x to the power of y.
+Examples:
+• the power (5, 3) function must return 125;
+• the power (3, 0) function must return 1.
+
+Solution
+function power (x, y) {
+return Math.pow (x, y);
+}

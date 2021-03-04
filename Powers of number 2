@@ -1,0 +1,18 @@
+
+Task
+Powers of number 2
+Get an array of powers of 2: [1, 2, 4, 8, 16 ...]
+ 
+Write a function called powersOfTwo that takes n as an argument and returns an array of powers of 2 (powers from 0 to n).
+Example:
+• the powersOfTwo (2) function must return [1, 2, 4];
+• the powersOfTwo (4) function must return [1, 2, 4, 8, 16]
+
+Solution
+function powersOfTwo (n) {
+let arr = [];
+for (let i = 0; i <= n; i ++) {
+arr.push (Math.pow (2, (i)));
+}
+return arr;
+}

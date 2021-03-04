@@ -1,0 +1,20 @@
+
+Task
+The sum of the squares of numbers from 1 to n.
+Find the sum of the squares of numbers from 1 to n:
+ 
+Write a function called sumOfSquares that takes n as an argument and returns the sum of the squares of the numbers 1 through n.
+Example:
+• function sumOfSquares (3) must return 14;
+• the sumOfSquares (4) function must return 30.
+
+Solution
+function sumOfSquares (n) {
+   let sum = 0;
+   for (let i = 1; i <= n; i + = 2) {
+   for (s = 1; s <= n; s ++) {
+             sum + = (s * s);
+       }
+     return sum;
+     }
+}

@@ -1,0 +1,17 @@
+
+Task
+Degrees of array elements
+Given an array arr. Modify the elements of the array to square each even element and each odd element to a cube.
+Write a function named powerArray that takes an array arr, squares every even element, cube every odd element, and returns the modified array.
+Example:
+• the powerArray ([1, 2, 3, 5]) function must return [1, 4, 27, 125];
+• the powerArray ([2, 4, 6, 1]) function must return [4, 16, 36, 1].
+
+Solution
+function powerArray (arr) {
+for (let i = 0; i <arr.length; i ++) {
+   if (arr [i]% 2 === 0) arr [i] = Math.pow (arr [i], 2);
+   else arr [i] = Math.pow (arr [i], 3);
+}
+return arr;
+}

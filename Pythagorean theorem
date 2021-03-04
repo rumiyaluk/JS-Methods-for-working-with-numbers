@@ -1,0 +1,14 @@
+
+Task
+Pythagorean theorem
+The square of the hypotenuse is equal to the sum of the squares of the legs (Pythagorean theorem).
+Write a function called squareOfHypotenuse that takes two numbers a, b (leg length values) as arguments and returns the square of the hypotenuse.
+Examples:
+• function squareOfHypotenuse (5, 3) should return 34;
+• the squareOfHypotenuse (3, 4) function should return 25.
+• the squareOfHypotenuse (8, 4) function should return 80.
+
+Solution
+function squareOfHypotenuse (a, b) {
+return Math.pow (a, 2) + Math.pow (b, 2);
+}

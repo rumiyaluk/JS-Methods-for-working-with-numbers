@@ -1,0 +1,14 @@
+
+Task
+Calculate the value of the expression.
+The values of the variables a, b, c are given. Calculate the value of the expression:
+  root a + root |b - c| / a * 3 + b * 2 + c * 4
+Write a function named expression that takes the values of the variables a, b, c as arguments and returns the value of the expression rounded to two decimal places.
+Examples:
+• the expression (1, 1, 1) function must return 1;
+• expression (6, 1, 7) must return 2.45.
+
+Solution
+function expression (a, b, c) {
+return + (Math.sqrt (a) + Math.sqrt (Math.abs (bc)) / (Math.pow (a, 3) + Math.pow (b, 2) + Math.pow (c, 4)) ) .toFixed (2);
+}

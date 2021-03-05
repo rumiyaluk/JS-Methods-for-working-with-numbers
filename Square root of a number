@@ -1,0 +1,16 @@
+Task
+Square root of a number
+Write a function called squareRoot that takes x as an argument and returns
+• square root of x, if x> = 0,
+• message "Root of a negative number is NaN", if x <0.
+Round the result to two decimal places.
+Examples:
+• the squareRoot (9) function must return 3;
+• the squareRoot (0) function must return 0;
+• the squareRoot (-4) function must return "Root of a negative number is NaN".
+
+Solution
+function squareRoot (x) {
+if (x <0) return "Root of a negative number is NaN";
+else return + Math.sqrt (x) .toFixed (2);
+}

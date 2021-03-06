@@ -1,0 +1,14 @@
+
+Task
+How many minutes have passed since the beginning of the day?
+N seconds have passed since the beginning of the day. Find the total number of minutes that have passed since the start of the day.
+Write a function called amountOfMinutes that takes n (the number of seconds) as an argument and returns the total number of minutes.
+Examples:
+• amountOfMinutes (7804) should return 130;
+• amountOfMinutes (3630) should return 60.
+
+Solution
+function amountOfMinutes (n) {
+let min = n / 60;
+return Math.floor (min);
+}

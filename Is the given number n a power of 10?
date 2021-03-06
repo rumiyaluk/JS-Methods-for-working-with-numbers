@@ -1,0 +1,17 @@
+
+Task
+Is the given number n a power of 10?
+Write a function called isPowerOfTen that takes a non-negative number n as an argument and returns true if n is a power of 10, or false otherwise.
+The number n is a power of 10 if there is an integer k such that 10 ** k = n.
+An indication of the solution. The Math.log10 (n) method returns the decimal (base 10) logarithm of n. Those. Math.log10 (n) is the power to which the number 10 must be raised to get the number n.
+Thus, if Math.log10 (n) is an integer, then n is a power of 10.
+Examples:
+• the isPowerOfTen (10) function must return true; (since Math.log10 (10) = 1 is an integer)
+• the isPowerOfTen (100) function must return true; (since Math.log10 (100) = 2 is an integer)
+• isPowerOfTen (0.1) function must return true; (since Math.log10 (0.1) = -1 is an integer)
+• the isPowerOfTen (20) function must return false; (since Math.log10 (20) = 1.3010299956639813 is not an integer)
+
+Solution
+function isPowerOfTen (n) {
+return Math.log10 (n)% 1 === 0;
+}

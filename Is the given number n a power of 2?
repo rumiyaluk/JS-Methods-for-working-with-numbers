@@ -1,0 +1,21 @@
+
+Task
+Is the given number n a power of 2?
+Write a function called isPowerOfTwo that takes a non-negative number n as an argument and returns true if n is a power of 2, or false otherwise.
+The number n is a power of 2 if there is an integer k such that
+n = 2 * k
+ 
+An indication of the solution. The Math.log2 (n) method returns the binary (base 2) logarithm of n.
+Those. Math.log2 (n) is the power to which the number 2 must be raised to get the number n.
+Thus, if Math.log2 (n) is an integer, then n is a power of 2.
+The solution to the problem is to check if Math.log2 (n) is an integer.
+You can check that the number x is an integer using the condition x% 1 === 0 (this condition is true for integers and false for non-integers).
+Examples:
+• isPowerOfTwo (8) function must return true; (since 8 is the third power of 2)
+• the isPowerOfTwo (32) function must return true; (since 32 is the fifth power of 2)
+• the isPowerOfTwo (7) function must return false (7 is not a power of 2).
+
+Solution
+function isPowerOfTwo (n) {
+return Math.log2 (n)% 1 === 0;
+}

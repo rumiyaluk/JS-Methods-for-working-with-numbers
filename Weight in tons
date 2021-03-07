@@ -1,0 +1,15 @@
+
+Task
+Weight in tons
+Weight m is given in kilograms. Find the number of full tons in this weight. (1 t = 1000 kg).
+Write a function named weightInTons that takes m (weight in kilograms) as an argument and returns the number of gross tons in that weight. Use the Math.floor () method.
+Examples:
+• the weightInTons (4163) function must return 4;
+• the weightInTons (23789) function should return 23;
+• the weightInTons (899) function must return 0.
+
+Solution
+function weightInTons (m) {
+let kg = 1000;
+return Math.floor (m / kg);
+}

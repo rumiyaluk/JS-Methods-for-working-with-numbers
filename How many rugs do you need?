@@ -1,0 +1,15 @@
+
+Task
+How many rugs do you need?
+You are given two positive integers a and b. a - corridor length, b - rug length. How many rugs (no overlap) are needed to cover the entire corridor?
+ 
+Write a function called countOfRugs that takes the numbers a and b as arguments and returns the maximum number of rugs of length b needed to cover a corridor with length a. Use the Math.floor () method.
+Examples:
+• the countOfRugs (5, 2) function must return 2;
+• the countOfRugs (30, 4) function must return 7;
+• the countOfRugs (3, 4) function must return 0.
+
+Solution
+function countOfRugs (a, b) {
+return Math.floor (a / b);
+}

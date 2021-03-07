@@ -1,0 +1,15 @@
+
+Task
+Distance in meters
+The given distance is length in centimeters. Find the number of full meters in this distance. (1 m = 100 cm).
+Write a function named distanceInMeters that takes length (distance in centimeters) as an argument and returns the number of full meters in that distance. Use the Math.floor () method.
+Examples:
+• distanceInMeters (4814) function should return 48;
+• distanceInMeters (525) function should return 5;
+• distanceInMeters (599) function should return 5.
+
+Solution
+function distanceInMeters (length) {
+let cm = 100;
+return Math.floor (length / cm);
+}

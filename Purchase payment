@@ -1,0 +1,13 @@
+
+Task
+Purchase payment
+Claudia buys sweets at the store, her purchase is $ XX.XX. She is going to pay in cash, she has a bundle of dollar bills, and there are no coins. What is the minimum amount of dollars Claudia must give to the cashier in order to pay for the purchase?
+Write a function called numberOfDollars that takes cost as an argument and returns the minimum integer amount of dollars to be passed to the cashier for the purchase.
+Examples:
+• the numberOfDollars (12.75) function must return 13;
+• the numberOfDollars (15.1) function must return 16.
+
+Solution
+function numberOfDollars (cost) {
+return Math.ceil (cost);
+}

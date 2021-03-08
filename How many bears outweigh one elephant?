@@ -1,0 +1,13 @@
+
+Task
+How many bears outweigh one elephant?
+The mass of one bear is equal to bearWeight. The mass of one elephant is elephantWeight. What is the smallest number of such bears that can outweigh an elephant?
+Write a function called bears that takes the numbers bearWeight and elephantWeight as arguments and returns the smallest number of bears that can outweigh one elephant.
+Examples:
+• the bears (300, 5000) function must return 17;
+• bears (250, 5150) should return 21.
+
+Solution
+function bears (bearWeight, elephantWeight) {
+return Math.ceil (elephantWeight / bearWeight);
+}

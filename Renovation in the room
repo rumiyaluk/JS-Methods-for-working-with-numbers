@@ -1,0 +1,13 @@
+
+Task
+Renovation in the room
+The surface area of the walls in the room is s square meters. The wallpaper tube is 10 meters long and w meters wide. How many minimum wallpaper tubes do you need to buy to make a renovation in a room?
+Write a function called numberOfWallpapers that takes the numbers s (wall surface area) and w (wallpaper tube width) as arguments and returns the number of wallpaper tubes needed to repair.
+Examples:
+• the numberOfWallpapers (58, 0.5) function should return 12;
+• numberOfWallpapers (36, 1) should return 4.
+
+Solution
+function numberOfWallpapers (s, w) {
+ return Math.ceil (s / (10 * w));
+}

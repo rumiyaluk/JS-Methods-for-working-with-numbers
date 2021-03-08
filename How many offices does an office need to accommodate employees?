@@ -1,0 +1,13 @@
+
+Task
+How many offices does an office need to accommodate employees?
+There are k workplaces in each office of the office. What is the smallest number of offices sufficient to accommodate the number of employees?
+Write a function called officeRooms that takes the numbers k (the number of seats in one office) and number (the number of office employees) as arguments and returns the smallest number of offices needed to accommodate the number of employees.
+Examples:
+• the officeRooms (300, 5000) function should return 17;
+• the officeRooms (250, 5150) function should return 21
+
+Solution
+function officeRooms(k, number){
+ return Math.ceil(number / k);
+}

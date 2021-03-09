@@ -1,0 +1,15 @@
+
+Task
+Robot Kuzya
+Let's teach the robot Kuzyu to speak. Let him round the exact values the way people do.
+The exact value - a fractional number - is stored in the temperatureExact variable.
+Get a line like "Outside the window is 32.3 degrees Celsius. That is almost 33"
+Write a function called temperatureOutside that takes a positive integer temperatureExact (the exact temperature value) as an argument and returns a string as above.
+Example:
+• the temperatureOutside (35.6) function should return "Outside the window is 35.6 degrees Celsius. That is almost 36";
+
+Solution
+function temperatureOutside(temperatureExact) {
+ return `Outside the window is ${temperatureExact} degrees Celsius. That is almost ${Math.ceil(temperatureExact)}`;
+}
+

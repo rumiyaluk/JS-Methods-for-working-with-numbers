@@ -1,0 +1,14 @@
+
+Task
+Distance from Earth to Moon
+Nowadays astronomers with the help of modern instruments with a laser beam can determine the distance between the Earth and the Moon with an accuracy of several centimeters. On one of the observation days, the Moon approached the Earth at a distance of distance cm. Calculate this distance in meters and kilometers, rounding the results to the nearest whole number.
+Write a function named distanceToMoon that takes a distance (distance in centimeters) as an argument and returns an array [distanceInKm, distanceInMeters].
+Example:
+• distanceToMoon (38020012375) function should return [380200, 380200124].
+
+Solution
+function distanceToMoon (distance) {
+let km = Math.round (distance / 100000);
+  let m = Math.round (distance / 100);
+  return [km, m];
+}

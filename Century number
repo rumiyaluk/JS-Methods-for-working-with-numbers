@@ -1,0 +1,14 @@
+
+Task
+Century number.
+The 20th century began in 1901 and ended in 2000. The 1st century began in the 1st year and ended in the 100th year.
+Find the century number for the given year.
+Write a function named century that takes a positive integer year (year) as an argument and returns the century number.
+Examples:
+• century (1901) should return 20;
+• century (2000) should return 20.
+
+Solution
+function century (year) {
+return Math.ceil (year / 100);
+}

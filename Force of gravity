@@ -1,0 +1,14 @@
+
+Task
+Force of gravity
+The force of gravity with which the Earth attracts a body located on its surface or near it is called the force of gravity.
+The force with which the Earth attracts bodies can be calculated using the formula F = m⋅g, where m is the mass of the body and g is the acceleration of gravity. Near the Earth's surface, g is approximately 9.81 m / s ** 2.
+Write a function named forceOfGravity that takes m (body weight in kilograms) as an argument and returns gravity, rounded to the nearest integer.
+Example:
+• the forceOfGravity (10) function should return 98.
+
+Solution
+function forceOfGravity (m) {
+ let g = 9.81;
+ return Math.round (m * g);
+}

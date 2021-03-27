@@ -11,3 +11,7 @@ let x = 0;
     while (x <len) {
     arr [x] = Math.trunc (arr [x]);
     x ++;
+      }
+return arr;
+}
+

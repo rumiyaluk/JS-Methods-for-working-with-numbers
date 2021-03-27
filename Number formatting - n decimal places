@@ -1,0 +1,12 @@
+Task
+Number formatting - n decimal places
+Write a function nDecimalDigits that takes the numbers num (original number) and n (number of decimal places) as arguments and returns num with only n decimal places. The number does not need to be rounded, just leave only n decimal places.
+Examples:
+• the nDecimalDigits (6.642867, 3) function must return 6.642, the result of rounding to three decimal places 6.643 will be incorrect.
+• the nDecimalDigits (4.1567, 2) function must return 4.15, the result of rounding to two decimal places 4.16 will be incorrect.
+
+Solution
+function nDecimalDigits (num, n) {
+let f = num.toString (). split ('.')
+return + (`$ {f [0]}.` + f [1] .toString (). slice (0, n))
+ }

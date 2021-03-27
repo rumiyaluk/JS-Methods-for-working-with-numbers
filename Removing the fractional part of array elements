@@ -1,0 +1,13 @@
+Task
+Removing the fractional part of array elements.
+Write a function integerPartsOfElements that takes an array arr as an argument and returns an array that equals the integer part of its value.
+Examples:
+• the integerPartsOfElements function ([7.23, 34.89, 0.9, 4.45, 8.5]) should return [7, 34, 0, 4, 8].
+
+Solution
+function integerPartsOfElements (arr) {
+let x = 0;
+    let len = arr.length;
+    while (x <len) {
+    arr [x] = Math.trunc (arr [x]);
+    x ++;

@@ -1,0 +1,13 @@
+Task
+The minimum of two numbers
+Find the smaller of the two given numbers.
+Write a min function that takes two numbers a, b as arguments and returns the smallest number.
+Example:
+• the min (13, 45) function must return 13;
+• the min (12, 12) function must return 12;
+• the min (21, 12) function must return 12.
+
+Solution
+function min (a, b) {
+ return Math.min (a, b);
+  }

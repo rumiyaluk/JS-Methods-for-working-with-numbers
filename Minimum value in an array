@@ -1,0 +1,12 @@
+Task
+Minimum value in an array
+Write a min function that takes an arr array as an argument and returns the minimum element of that array. If the array is empty, the function should return [].
+Examples:
+• the min function ([7, 23, 34, 9, 4, 45]) must return 4.
+• the min ([]) function must return [].
+
+Solution
+function min (arr) {
+if (arr.length === 0) return [];
+return Math.min (... arr);
+}

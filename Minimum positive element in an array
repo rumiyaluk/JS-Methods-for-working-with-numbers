@@ -1,0 +1,14 @@
+Task
+Minimum positive element in an array
+Write a minPositive function that takes an array arr as an argument and returns the minimum positive element in the array. If the arr array contains no positive elements, return null.
+Example:
+• the minPositive function ([3, 6, 8, -4, -3, 2, 16]) must return 2;
+• the minPositive ([7, 5]) function must return 5;
+• the minPositive ([- 7, -5]) function must return null;
+• the minPositive ([]) function must return null.
+
+Solution
+function minPositive (arr) {
+let pos = arr.filter (el => el> 0);
+   return! pos.length? null: Math.min (... pos)
+}

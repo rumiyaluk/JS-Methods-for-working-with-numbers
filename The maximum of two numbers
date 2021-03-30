@@ -1,0 +1,13 @@
+Task
+The maximum of two numbers
+Find the larger of the two given numbers.
+Write a function max that takes two numbers a, b as arguments and returns a larger number.
+Example:
+• function max (1, 5) must return 5;
+• function max (7, 7) must return 7;
+• function max (20, 6) must return 20.
+
+Solution
+function max (a, b) {
+return Math.max (a, b);
+}

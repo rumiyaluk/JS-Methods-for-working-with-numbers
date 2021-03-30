@@ -1,0 +1,16 @@
+Task
+Maximum and minimum value in an array
+Write a function maxMin that takes the arr array as arguments and returns an array containing the maximum and minimum value: [max, min]. If the array is empty, return [].
+Example:
+• function maxMin ([3, 4, 8, 1]) must return [8, 1];
+• function maxMin ([7, 7]) must return [7, 7];
+• function maxMin ([2]) must return [2, 2];
+• function maxMin ([]) must return [];
+
+Solution
+function maxMin(arr){
+ let max = Math.max(...arr);
+  let min = Math.min(...arr);
+  if(arr.length === 0) return [];
+  return [max, min];
+}

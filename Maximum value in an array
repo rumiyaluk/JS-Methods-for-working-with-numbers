@@ -1,0 +1,13 @@
+Task
+Maximum value in an array
+Write a function max that takes an array arr as an argument and returns the maximum element of that array. If the array is empty, the function should return [].
+Examples:
+• function max ([7, 88, 34, 9, 4, 45]) must return 88.
+• function max ([]) must return [].
+
+Solution
+function max (arr) {
+  if (arr.length === 0) return [];
+   else
+   return Math.max (... arr);
+}

@@ -1,0 +1,17 @@
+Task
+Difference between maximum and minimum value in an array
+Write a function differenceMaxMin that takes an array arr as an argument and returns the difference between the maximum and minimum value. If the array is empty, return null.
+Example:
+• the differenceMaxMin ([3, 4, 8, 1]) function must return 7;
+• the differenceMaxMin ([7, 7]) function must return 0;
+• the differenceMaxMin ([2]) function must return 0;
+• the differenceMaxMin ([]) function must return null;
+
+Solution
+function differenceMaxMin (arr) {
+let max = Math.max (... arr);
+   let min = Math.min (... arr);
+   if (arr.length === 0) return null;
+   else
+   return max - min;
+}

@@ -1,0 +1,13 @@
+Task
+Random integer from 0 to 100
+Math.random () returns a random number between 0 (inclusive) and 1 (not inclusive).
+Write a function named integerFrom0To100 that returns a random integer between 0 and 100, inclusive.
+Examples:
+• the integerFrom0To100 () function returns 100 (any integer from 0 to 100);
+• the integerFrom0To100 () function returns 2 (any integer from 0 to 100);
+• the integerFrom0To100 () function returns 99 (any integer from 0 to 100).
+
+Solution
+function integerFrom0To100 () {
+ return Math.floor (Math.random () * 100);
+}

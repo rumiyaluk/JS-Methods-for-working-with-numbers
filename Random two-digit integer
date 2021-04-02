@@ -1,0 +1,14 @@
+Task
+Random two-digit integer
+Math.random () returns a random number between 0 (inclusive) and 1 (not inclusive).
+Write a function named integerFrom10To99 that returns a random two-digit integer between 10 and 99, inclusive.
+Examples:
+• the integerFrom10To99 () function returns 10 (any integer from 10 to 99);
+• the integerFrom10To99 () function returns 99 (any integer from 10 to 99);
+• the integerFrom10To99 () function returns 74 (any integer from 10 to 99).
+
+function integerFrom10To99(){
+ let min = 10;
+ let max = 99;
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}

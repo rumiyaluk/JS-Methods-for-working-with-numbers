@@ -1,0 +1,11 @@
+Task
+Random integer from min to max
+Write a function named integerFromMinToMax that takes two positive integers min, max (min <max) as arguments, 
+and returns a random number between min (inclusive) and max (inclusive).
+Example:
+• the integerFromMinToMax (50, 100) function returns any integer between 50 and 100.
+
+Solution
+function integerFromMinToMax (min, max) {
+  return Math.floor (Math.random () * (max - min + 1) + min);
+}

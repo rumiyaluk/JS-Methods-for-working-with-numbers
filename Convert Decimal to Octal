@@ -1,0 +1,12 @@
+Task
+Convert Decimal to Octal
+Write a function named numToOctal that takes a positive decimal integer num as an argument and returns that octal number.
+Examples:
+• the numToOctal (5) function must return 5;
+• the numToOctal (8) function must return 10;
+• the numToOctal (15) function should return 17
+
+Solution
+function numToOctal (num) {
+ return + num.toString (8);
+}

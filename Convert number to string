@@ -1,0 +1,11 @@
+Task
+Convert number to string
+Write a function named numToStr that takes the number num as an argument and returns a string containing that number.
+Examples:
+• the numToStr (9) function must return "9";
+• the numToStr (-2) function must return "-2"
+
+Solution
+function numToStr (num) {
+ return num + '';
+}

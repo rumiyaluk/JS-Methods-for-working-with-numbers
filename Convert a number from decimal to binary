@@ -1,0 +1,12 @@
+Task
+Convert a number from decimal to binary
+Write a function named numToBinary that takes a positive decimal integer num as an argument and returns that number in binary.
+Examples:
+• the numToBinary (5) function must return 101;
+• the numToBinary (2) function must return 10;
+• the numToBinary (12) function must return 1100;
+• the numToBinary (60) function should return 111100.
+Solution
+function numToBinary (num) {
+ return + num.toString (2);
+}

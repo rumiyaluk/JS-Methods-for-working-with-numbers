@@ -1,0 +1,14 @@
+Task
+Can a number be converted to base n?
+Write a function named convertNumber that takes an integer positive decimal number num and a number n (base) 
+as arguments and returns a base-n number or undefined if translation to such a system is not possible.
+Examples:
+• the convertNumber (9, 2) function must return "1001";
+• the convertNumber (135, 40) function must return undefined.
+
+Solution
+function convertNumber(num, n){
+ if(n < 2 || n > 36 || n === 0) return undefined;
+  else 
+  return  (num).toString(n);
+}

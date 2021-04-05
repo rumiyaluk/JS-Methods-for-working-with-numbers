@@ -1,0 +1,13 @@
+Task
+Convert Decimal to Hexadecimal
+Write a function named numToHexadecimal that takes a positive integer decimal number num as an argument and returns that hexadecimal number as a string.
+Examples:
+• the numToHexadecimal (9) function must return "9";
+• the numToHexadecimal (10) function must return "a";
+• the numToHexadecimal (12) function must return "c";
+• the numToHexadecimal (16) function must return "10".
+
+Solution
+function numToHexadecimal (num) {
+ return num.toString (16);
+}

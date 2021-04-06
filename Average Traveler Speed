@@ -1,0 +1,14 @@
+Task
+Average Traveler Speed
+The traveler covered the distance s1 km from point A to point B in t1 hours, then the distance s2 km from point B to point C in t2 hours. Find the average speed of the traveler and round the result to 2 decimal places.
+Write a function averageSpeed that takes 4 numbers s1, t1, s2, t2 as arguments and returns the average speed of the traveler. Round the result to 2 decimal places and return it as a number.
+Examples:
+• the averageSpeed (14, 3, 6, 2) function must return 4.
+• the averageSpeed (5, 2, 10, 3) function must return 3.
+• the averageSpeed (17, 5, 20, 4) function should return 4.11.
+
+Solution
+function averageSpeed (s1, t1, s2, t2) {
+ let midSpeed = (s1 + s2) / (t1 + t2);
+  return + midSpeed.toFixed (2);
+}

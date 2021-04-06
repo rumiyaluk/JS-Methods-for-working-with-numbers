@@ -1,0 +1,14 @@
+Task
+Radians to degrees
+Angles in mathematics are measured in degrees or radians. Conversion formula from radians to degrees:
+ 
+Write a function convertRadiansToDegrees that takes n (angle in radians) as an argument and returns the angle in degrees. Round the result to 2 decimal places and return it as a number.
+Examples:
+• convertRadiansToDegrees (1) should return 57.30.
+• convertRadiansToDegrees (2) should return 114.59.
+
+Solution
+function convertRadiansToDegrees (n) {
+  let degrees = ((180 * n) / Math.PI) .toFixed (2);
+   return + degrees;
+}

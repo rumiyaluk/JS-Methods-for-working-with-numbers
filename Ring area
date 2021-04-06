@@ -1,0 +1,15 @@
+Task
+Ring area
+Write a function ringSquare that takes 2 numbers r1, r2 (outer and inner ring radii) (r1> r2) 
+as arguments and returns the area of the ring. Round the result to 2 decimal places and return it as a number.
+Examples:
+• ringSquare (2, 1) should return 9.42.
+• ringSquare (5, 4) should return 28.27.
+
+Solution
+function ringSquare (r1, r2) {
+  let bigRing = Math.PI * Math.pow (r1,2);
+   let smallRing = Math.PI * Math.pow (r2,2);
+   let dif = bigRing - smallRing;
+   return + (dif) .toFixed (2);
+}

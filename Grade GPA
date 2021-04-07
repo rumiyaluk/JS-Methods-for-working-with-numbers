@@ -1,0 +1,17 @@
+Task
+Grade GPA
+Write a function average that takes an array of marks (an array of student marks) as an argument and returns the grade point average. Round the result to 1 decimal place and return it as a string.
+Example:
+• the average function ([4, 5, 4, 5]) must return "4.5".
+• the average function ([5, 3]) must return "4.0".
+
+Solution
+function average (marks) {
+ let arr = marks;
+     let sum = 0;
+       for (let i = 0; i <arr.length; i ++) {
+       sum + = arr [i];
+       }
+   let res = sum / arr.length;
+   return res.toFixed (1);
+   }

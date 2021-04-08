@@ -1,0 +1,19 @@
+Task
+"How much liquid did Claudia drink in a day?"
+Claudia drinks different drinks throughout the day. Claudia writes information about what she drinks to an array, for example,
+["3 glasses of water", "1 glass of milk", "2 glasses of juice", "1 glass of wine"]
+How much liquid did Claudia drink in a day?
+Write a hydrate function that takes an array arr containing strings of the name and number of glasses of drink you drink, and returns the total amount of liquid you drink in ml.
+1 glass = 200 ml
+Examples:
+• the hydrate function (["3 glasses of water", "1 glass of milk", "2 glasses of juice", "1 glass of wine"]) should return "1400 ml".
+• function hydrate (["1 glass of water"]) should return "200 ml".
+
+Solution
+function hydrate (arr) {
+let sum = 0;
+  for (let i = 0; i <arr.length; i ++) {
+    sum + = Number.parseInt (arr [i])
+  }
+return sum * 200 + "" + "ml";
+}

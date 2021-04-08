@@ -1,0 +1,13 @@
+Task
+"What's the date today?"
+To the question: "What is the date today?" we sometimes reply briefly: "5th of September", "16th of May", and so on. Your task is to get the date (number only).
+Write a getDay function that takes the string answer (a string containing a date) as an argument and returns a number - the day of the month.
+Examples:
+• the getDay ("5th of September") function must return 5.
+• getDay ("16th of May") function should return 16.
+• getDay ("The 5th of April") function must return NaN.
+
+Solution
+function getDay (answer) {
+ return parseInt (answer);
+}

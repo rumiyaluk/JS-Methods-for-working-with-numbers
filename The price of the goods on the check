@@ -1,0 +1,14 @@
+Task
+The price of the goods on the check
+On the shop receipt, the price of the goods and the name of the goods are printed in the form: "2.59 milk". Get the price of an item as a number.
+Write a function priceOfItem that takes a receipt (purchase description as a string: "price item name") as an argument and returns a number - the price of the item.
+Examples:
+• the priceOfItem ("2.59 milk") function should return 2.59.
+• the priceOfItem ("4.55 bread") function should return 4.55.
+• the priceOfItem ("2 cake") function must return 2.
+• the priceOfItem (". 4 water") function should return 0.4.
+
+Solution
+function priceOfItem (receipt) {
+ return Number.parseFloat (receipt);
+}
